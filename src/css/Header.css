@@ -1,0 +1,18 @@
+.header {
+    height: 15vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 3em;
+    
+    color: white;
+}
+
+.header, .header__title {
+    background-color: rgb(0, 87, 87);
+}

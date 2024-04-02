@@ -1,0 +1,125 @@
+.Tasks {
+    width: 100%;
+    height: 85vh;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Tasks__create, .Tasks__total {
+    width: 50%;
+    height: 20vh;
+    min-height: 20vh;
+    min-width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    border-bottom: solid rgb(0, 87, 87);
+}
+
+.Tasks__title {
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+.Tasks__input, .Tasks__submit, .Tasks__listItem{
+    border: none;
+    border-radius: 10px;
+}
+
+.Tasks__input {
+    width: 60%;
+    height: 20%;
+    padding-left: 10px;
+}
+
+.Tasks__input {
+    color: black;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(180, 180, 180);
+}
+
+.Tasks__submit {
+    width: 25%;
+    height: 20%;
+    font-size: 1.1em;
+
+    background-color: #ff1818;
+    box-shadow: 2px 2px 2px #a51010;
+}
+
+.Tasks__list, .Tasks__exception {
+    width: 100%;
+    height: 64vh;
+    display: flex;
+}
+
+.Tasks__exception {
+    justify-content: center;
+    align-items: center;
+}
+
+.Tasks__list, .Tasks--listItem--unfinished, .Tasks--listItem--finished, .Tasks--listItem--expired {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Tasks--listItem--unfinished, .Tasks--listItem--finished, .Tasks--listItem--expired {
+    width: 20%;
+    height: 25%;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 1.1em;
+    border-radius: 15px;
+}
+
+.Tasks--listItem--expired {
+    background-color: orange;
+    border: none;
+}
+
+.Tasks--listItem--textExpired {
+    background: none;
+    color: black;
+}
+
+.Tasks--listItem--unfinished {
+    background-color: rgb(255, 59, 59);
+} 
+
+.Tasks--listItem--titleUnfinished, .Tasks--listItem--textUnfinished {
+    background-color: rgb(255, 59, 59)
+}
+
+.Tasks--listItem--finished {
+    background-color: rgb(51, 248, 51);
+}
+
+.Tasks--listItem--titleFinished, .Tasks--listItem--textFinished {
+    background-color: rgb(51, 248, 51);
+}
+
+.Tasks--listItem--titleUnfinished, .Tasks--listItem--titleFinished, .Tasks--listItem--textFinished, .Tasks--listItem--textUnfinished {
+    color: black;
+}
+
+.Tasks--listItem--button {
+    width: 50%;
+    height: 25%;
+    font-size: 1em;
+    font-weight: 600;
+
+    background-color: rgb(100, 255, 29);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(0, 121, 16);
+}
