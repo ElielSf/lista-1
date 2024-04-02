@@ -12,7 +12,7 @@ export default function Tasks() {
     const dataHoje = new Date().toLocaleDateString();
     const dataOntem = subDays(new Date(), 1);   
     const dataOntemFormatada = format(dataOntem, 'dd/MM/yyyy'); 
-    const tempoExpirar = 4; //tempo em segundos total de 1 dia -- mude o tempo aqui para testar
+    const tempoExpirar = 24 * 60 * 60; //tempo em segundos total de 1 dia -- mude o tempo aqui para testar
 
     useEffect(() => {
         const timer = setInterval(() => {
